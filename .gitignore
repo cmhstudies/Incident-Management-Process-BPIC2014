@@ -5,5 +5,7 @@
 .vscode/settings.json
 .DS_Store
 *.code-workspace
-zKitchenSink/Incident-Management-Process-BPIC2014.Rproj
-zKitchenSink/Quick reference BPI Challenge 2014.xlsx
+zKitchenSink/
+zKitchenSink/5. FAMD.R
+zKitchenSink/5. Model Building.py
+zKitchenSink/PriorityToOrdinal.py

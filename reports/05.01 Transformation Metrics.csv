@@ -1,0 +1,71 @@
+,MEstMetadata,TargetMetadata,WOEMetadata,HelmertMetadata,RobustMetadata
+Name,Bare Bones with MEstimate Encoder,Bare Bones with Target Encoder,Bare Bones with WOE Encoder,Bare Bones with Helmert Encoder,Bare Bones with WOE and RobustScaler
+Column Transforms,"['mestimateencoder', 'standardscaler']","['targetencoder', 'standardscaler']","['woeencoder', 'standardscaler']","['helmertencoder', 'standardscaler']","['woeencoder', 'robustscaler']"
+Classifier,"LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=100,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=None, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)","LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=100,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=None, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)","LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=100,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=None, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)","LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=100,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=None, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)","LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=100,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=None, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)"
+Classifier - Intercept,-6.152021639324596,-6.120540673257555,-0.9376431030653062,-0.012120483118861172,-0.9519111991952964
+Classifier - Coefficients,"                                   0
+Service_Component_WBS_aff   0.176063
+Urgency                     0.789836
+KM_number                   6.032809
+Count_Related_Interactions  4.427685
+Count_Related_Incidents     5.286315
+Count_Related_Changes       0.073164
+Open_Time_HourOfDay         0.184935
+Open_Time_DayOfWeek        -0.031457
+CI_TypeSubType_aff          0.002674","                                   0
+Service_Component_WBS_aff   0.465650
+Urgency                     0.936344
+KM_number                   5.528813
+Count_Related_Interactions  4.423700
+Count_Related_Incidents     5.229369
+Count_Related_Changes       0.158573
+Open_Time_HourOfDay         0.189712
+Open_Time_DayOfWeek        -0.032066
+CI_TypeSubType_aff          0.004637","                                   0
+Service_Component_WBS_aff   0.103594
+Urgency                     0.187539
+KM_number                   1.121845
+Count_Related_Interactions  1.173003
+Count_Related_Incidents     1.246162
+Count_Related_Changes       0.039549
+Open_Time_HourOfDay         0.182241
+Open_Time_DayOfWeek        -0.035957
+CI_TypeSubType_aff          0.004179","[[-0.01210697  0.027224   -0.0264269  ...  0.20972854 -0.00088431
+   0.00249929]]","[[ 0.10361511  0.18809943  1.12185888  1.17291903  1.24618104  0.03946429
+   0.12646042 -0.057854    0.03023913]]"
+Metrics - Cross Validation Accuracy,0.7308581862446744,0.7339419760600527,0.7377561371474944,0.7367823087847434,0.7377561371474944
+Metrics - F1 score,0.6585729428597232,0.656800064664544,0.6614631809806331,0.6613391118904624,0.6614631809806331
+Metrics - Confusion Matrix Classification Accuracy,0.7424973965729433,0.7438227776199943,0.7468522200132538,0.7427814067973114,0.7468522200132538
+Metrics - Confusion Matrix Classification Error,0.25750260342705666,0.25617722238000573,0.2531477799867462,0.2572185932026886,0.2531477799867462
+Metrics - Confusion Matrix True Positive Rate,0.41789608723540733,0.40699166132135983,0.4143681847338037,0.42751763951250804,0.4143681847338037
+Metrics - Confusion Matrix True Negative Rate,0.8784419073203492,0.8848891873740765,0.8860980523841504,0.8748153122901277,0.8860980523841504
+Metrics - Confusion Matrix False Positive Rate,0.12155809267965077,0.11511081262592344,0.11390194761584957,0.1251846877098724,0.11390194761584957
+Metrics - Confusion Matrix Precision,0.5901268115942029,0.59689557855127,0.6037383177570094,0.5885209713024283,0.6037383177570094
+Metrics - ROC Curve fpr array,[0.         0.         0.         ... 0.9985225  0.99892545 1.        ],[0.         0.         0.         ... 0.99892545 0.99892545 1.        ],[0.         0.         0.         ... 0.99946273 0.99973136 1.        ],"[0.00000000e+00 1.34318334e-04 2.68636669e-04 ... 9.99865682e-01
+ 9.99865682e-01 1.00000000e+00]",[0.         0.         0.         ... 0.99946273 0.99973136 1.        ]
+Metrics - ROC Curve tpr array,"[0.00000000e+00 3.20718409e-04 2.88646568e-03 ... 1.00000000e+00
+ 1.00000000e+00 1.00000000e+00]","[0.00000000e+00 3.20718409e-04 2.88646568e-03 ... 9.99679282e-01
+ 1.00000000e+00 1.00000000e+00]","[0.00000000e+00 3.20718409e-04 2.88646568e-03 ... 1.00000000e+00
+ 1.00000000e+00 1.00000000e+00]",[0.         0.         0.         ... 0.99967928 1.         1.        ],"[0.00000000e+00 3.20718409e-04 2.88646568e-03 ... 1.00000000e+00
+ 1.00000000e+00 1.00000000e+00]"
+Metrics - AUC,0.7766843316672059,0.7767767132157093,0.7806294265709925,0.766496385079206,0.7806315589499391

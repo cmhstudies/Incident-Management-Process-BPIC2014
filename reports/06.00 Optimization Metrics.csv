@@ -1,0 +1,204 @@
+,1 SelectKBest,2 SelectFPR,3 Interaction Terms SelectKBest,4 Interaction Terms SelectFPR
+Null Accuracy,0.7048187068067784,0.7048187068067784,,
+Metrics - Classification Report,"              precision    recall  f1-score   support
+
+           0       0.78      0.89      0.83      7445
+           1       0.60      0.41      0.49      3118
+
+    accuracy                           0.75     10563
+   macro avg       0.69      0.65      0.66     10563
+weighted avg       0.73      0.75      0.73     10563
+","              precision    recall  f1-score   support
+
+           0       0.78      0.89      0.83      7445
+           1       0.60      0.41      0.49      3118
+
+    accuracy                           0.75     10563
+   macro avg       0.69      0.65      0.66     10563
+weighted avg       0.73      0.75      0.73     10563
+","              precision    recall  f1-score   support
+
+           0       0.79      0.89      0.83      7445
+           1       0.62      0.42      0.50      3118
+
+    accuracy                           0.75     10563
+   macro avg       0.70      0.66      0.67     10563
+weighted avg       0.74      0.75      0.74     10563
+","              precision    recall  f1-score   support
+
+           0       0.78      0.89      0.83      7445
+           1       0.61      0.42      0.49      3118
+
+    accuracy                           0.75     10563
+   macro avg       0.70      0.65      0.66     10563
+weighted avg       0.73      0.75      0.73     10563
+"
+Metrics - Confusion Matrix,"[[6597  848]
+ [1826 1292]]","[[6597  848]
+ [1827 1291]]","[[6628  817]
+ [1805 1313]]","[[6607  838]
+ [1822 1296]]"
+Metrics - Confusion Matrix Classification Accuracy,0.7468522200132538,0.7467575499384644,0.7517750639023005,0.7481776010603048
+Metrics - Confusion Matrix Classification Error,0.2531477799867462,0.25324245006153556,0.24822493609769947,0.25182239893969516
+Metrics - Confusion Matrix True Positive Rate,0.4143681847338037,0.414047466324567,0.4211032713277742,0.4156510583707505
+Metrics - Confusion Matrix True Negative Rate,0.8860980523841504,0.8860980523841504,0.8902619207521827,0.887441235728677
+Metrics - Confusion Matrix False Positive Rate,0.11390194761584957,0.11390194761584957,0.10973807924781732,0.11255876427132304
+Metrics - Confusion Matrix Precision,0.6037383177570094,0.6035530621785882,0.6164319248826291,0.6073102155576382
+Metrics - AUC,0.7806294265709925,0.7806632430855996,0.7866722869570348,0.782094823230093
+Metrics - ROC Curve fpr array,[0.         0.         0.         ... 0.99946273 0.99973136 1.        ],[0.         0.         0.         ... 0.99946273 0.99973136 1.        ],"[0.00000000e+00 1.34318334e-04 2.68636669e-04 ... 9.99731363e-01
+ 9.99731363e-01 1.00000000e+00]","[0.00000000e+00 1.34318334e-04 4.02955003e-04 ... 9.99731363e-01
+ 9.99731363e-01 1.00000000e+00]"
+Metrics - ROC Curve tpr array,"[0.00000000e+00 3.20718409e-04 2.88646568e-03 ... 1.00000000e+00
+ 1.00000000e+00 1.00000000e+00]","[0.00000000e+00 3.20718409e-04 2.88646568e-03 ... 1.00000000e+00
+ 1.00000000e+00 1.00000000e+00]",[0.         0.         0.         ... 0.99967928 1.         1.        ],[0.         0.         0.         ... 0.99967928 1.         1.        ]
+Column Transforms,,"['woeencoder', 'standardscaler']","[('woeencoder', WOEEncoder(cols=None, drop_invariant=False, handle_missing='value',
+           handle_unknown='value', random_state=None, randomized=False,
+           regularization=1.0, return_df=True, sigma=0.05, verbose=0), Index(['Service_Component_WBS_aff', 'Urgency', 'KM_number',
+       'Open_Time_HourOfDay', 'Open_Time_DayOfWeek', 'CI_TypeSubType_aff'],
+      dtype='object')), ('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True), Index(['Count_Related_Interactions', 'Count_Related_Incidents',
+       'Count_Related_Changes'],
+      dtype='object'))]","[('woeencoder', WOEEncoder(cols=None, drop_invariant=False, handle_missing='value',
+           handle_unknown='value', random_state=None, randomized=False,
+           regularization=1.0, return_df=True, sigma=0.05, verbose=0), Index(['Service_Component_WBS_aff', 'Urgency', 'KM_number',
+       'Open_Time_HourOfDay', 'Open_Time_DayOfWeek', 'CI_TypeSubType_aff'],
+      dtype='object')), ('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True), Index(['Count_Related_Interactions', 'Count_Related_Incidents',
+       'Count_Related_Changes'],
+      dtype='object'))]"
+Selector,,"SelectFpr(alpha=0.05, score_func=<function f_classif at 0x1a214aae60>)","SelectKBest(k=45, score_func=<function f_classif at 0x1a214aae60>)","SelectFpr(alpha=0.05, score_func=<function f_classif at 0x1a214aae60>)"
+Classifier,,"LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=100,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=None, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)","LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=100,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=None, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)","LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+                   intercept_scaling=1, l1_ratio=None, max_iter=100,
+                   multi_class='auto', n_jobs=None, penalty='l2',
+                   random_state=None, solver='lbfgs', tol=0.0001, verbose=0,
+                   warm_start=False)"
+Classifier - Intercept,,-0.9376094581875354,,-0.9161546666017198
+Classifier - Coefficients,,"                                   0
+Service_Component_WBS_aff   0.104001
+Urgency                     0.188064
+KM_number                   1.121735
+Count_Related_Interactions  1.172629
+Count_Related_Incidents     1.245934
+Count_Related_Changes       0.038820
+Open_Time_HourOfDay         0.182436
+Open_Time_DayOfWeek        -0.035750",,"[ 0.15531191  0.2640625   1.12477936  1.30657131  1.2914163   0.04352038
+  0.2637966  -0.01366535 -0.17283283 -0.09059925  0.41040724 -0.01682171
+  0.09571744  0.02808663 -0.09640587 -0.53453846 -0.18849206 -0.01286896
+  0.11783178  1.69698495 -0.32302769 -0.13315008 -0.00987757  0.04285507
+  0.03881677]"
+Name,,,Optimize Round 3: Adding Interaction Terms,Optimize Round 4: Adding Interaction Terms with SelectFpr
+Best Estimator Classification Intercept,,,[-0.90415783],
+Best Estimator Classification Coefficients,,,"[[ 1.59293354e-01  2.91368383e-01  1.11916076e+00  1.35144148e+00
+   1.32715945e+00  5.55074960e-02  6.52223487e-01  4.12747947e-02
+  -2.23711213e-02 -7.06769881e-02 -8.62674909e-02  5.39840844e-01
+  -1.45471602e-02  1.39538363e-01  1.26602364e-01  1.19745197e-01
+  -4.21114140e-02 -5.79452623e-02 -1.42263843e-01 -1.99340922e-01
+  -4.80149840e-01  6.53363482e-01 -4.52856027e-02 -4.90327229e-04
+  -5.64893436e-01 -2.03455219e-01 -7.12555558e-02 -4.06959906e-03
+  -7.27932745e-02  5.94271895e-02  1.63117229e+00 -2.67207424e-01
+   1.67434428e+00 -4.41346203e-02  1.62837382e-03  8.02638862e-02
+   7.85155008e-01 -1.36917851e-01 -1.42411097e-01  8.68015178e-02
+   1.48028904e-01  8.06941782e-02 -2.01599716e-02 -4.43875605e-02
+   1.83345568e-02]]",
+Best SearchGridCV score,,,0.7446540880503145,
+Best SearchGridCV parameters,,,{'selector__k': 45},
+PolynomialFeatures,,,"PolynomialFeatures(degree=2, include_bias=True, interaction_only=True,
+                   order='C')","PolynomialFeatures(degree=2, include_bias=True, interaction_only=True,
+                   order='C')"
+Selector - Scores,,,"                                        feature names     scores       p-value
+0                           Service_Component_WBS_aff    2626.06             0
+1                                             Urgency    141.584   1.47283e-32
+2                                           KM_number    6104.44             0
+3                          Count_Related_Interactions    177.756   2.06821e-40
+4                             Count_Related_Incidents    679.763  7.61382e-148
+5                               Count_Related_Changes    902.109  1.10036e-194
+6                                 Open_Time_HourOfDay    62.0758    3.4407e-15
+7                                 Open_Time_DayOfWeek    5.60722     0.0178943
+8                                  CI_TypeSubType_aff   0.351935      0.553025
+9                   Service_Component_WBS_aff Urgency    10.1816    0.00142024
+10                Service_Component_WBS_aff KM_number    61.0097   5.90482e-15
+11  Service_Component_WBS_aff Count_Related_Intera...     23.359   1.35222e-06
+12  Service_Component_WBS_aff Count_Related_Incidents    6.61683     0.0101077
+13    Service_Component_WBS_aff Count_Related_Changes   0.763033       0.38239
+14      Service_Component_WBS_aff Open_Time_HourOfDay    14.0491   0.000178502
+15      Service_Component_WBS_aff Open_Time_DayOfWeek    3.93042     0.0474313
+16       Service_Component_WBS_aff CI_TypeSubType_aff  0.0114426      0.914813
+17                                  Urgency KM_number    77.5773    1.3586e-18
+18                 Urgency Count_Related_Interactions    1.58611      0.207894
+19                    Urgency Count_Related_Incidents    1.41119      0.234871
+20                      Urgency Count_Related_Changes    2.80496     0.0939861
+21                        Urgency Open_Time_HourOfDay  0.0231707      0.879015
+22                        Urgency Open_Time_DayOfWeek    1.50196      0.220382
+23                         Urgency CI_TypeSubType_aff    1.72824      0.188647
+24               KM_number Count_Related_Interactions     6.8929     0.0086592
+25                  KM_number Count_Related_Incidents    6.35211     0.0117304
+26                    KM_number Count_Related_Changes    177.014   2.99485e-40
+27                      KM_number Open_Time_HourOfDay    10.8814   0.000972706
+28                      KM_number Open_Time_DayOfWeek   0.872742      0.350207
+29                       KM_number CI_TypeSubType_aff    0.90923      0.340328
+30  Count_Related_Interactions Count_Related_Incid...     126.45   2.88839e-29
+31   Count_Related_Interactions Count_Related_Changes    7.81955     0.0051724
+32     Count_Related_Interactions Open_Time_HourOfDay   0.562839      0.453126
+33     Count_Related_Interactions Open_Time_DayOfWeek  0.0910199      0.762887
+34      Count_Related_Interactions CI_TypeSubType_aff   0.661448      0.416057
+35      Count_Related_Incidents Count_Related_Changes     2.6112      0.106124
+36        Count_Related_Incidents Open_Time_HourOfDay    1.81638      0.177757
+37        Count_Related_Incidents Open_Time_DayOfWeek   0.473323      0.491469
+38         Count_Related_Incidents CI_TypeSubType_aff    7.34584    0.00672647
+39          Count_Related_Changes Open_Time_HourOfDay    8.62504    0.00331879
+40          Count_Related_Changes Open_Time_DayOfWeek    10.6134     0.0011242
+41           Count_Related_Changes CI_TypeSubType_aff    16.8177   4.12807e-05
+42            Open_Time_HourOfDay Open_Time_DayOfWeek   0.544717      0.460491
+43             Open_Time_HourOfDay CI_TypeSubType_aff   0.310648      0.577288
+44             Open_Time_DayOfWeek CI_TypeSubType_aff    3.50479     0.0612036","                                        feature names     scores       p-value
+0                           Service_Component_WBS_aff    2626.06             0
+1                                             Urgency    141.584   1.47283e-32
+2                                           KM_number    6104.44             0
+3                          Count_Related_Interactions    177.756   2.06821e-40
+4                             Count_Related_Incidents    679.763  7.61382e-148
+5                               Count_Related_Changes    902.109  1.10036e-194
+6                                 Open_Time_HourOfDay    62.0758    3.4407e-15
+7                                 Open_Time_DayOfWeek    5.60722     0.0178943
+8                                  CI_TypeSubType_aff   0.351935      0.553025
+9                   Service_Component_WBS_aff Urgency    10.1816    0.00142024
+10                Service_Component_WBS_aff KM_number    61.0097   5.90482e-15
+11  Service_Component_WBS_aff Count_Related_Intera...     23.359   1.35222e-06
+12  Service_Component_WBS_aff Count_Related_Incidents    6.61683     0.0101077
+13    Service_Component_WBS_aff Count_Related_Changes   0.763033       0.38239
+14      Service_Component_WBS_aff Open_Time_HourOfDay    14.0491   0.000178502
+15      Service_Component_WBS_aff Open_Time_DayOfWeek    3.93042     0.0474313
+16       Service_Component_WBS_aff CI_TypeSubType_aff  0.0114426      0.914813
+17                                  Urgency KM_number    77.5773    1.3586e-18
+18                 Urgency Count_Related_Interactions    1.58611      0.207894
+19                    Urgency Count_Related_Incidents    1.41119      0.234871
+20                      Urgency Count_Related_Changes    2.80496     0.0939861
+21                        Urgency Open_Time_HourOfDay  0.0231707      0.879015
+22                        Urgency Open_Time_DayOfWeek    1.50196      0.220382
+23                         Urgency CI_TypeSubType_aff    1.72824      0.188647
+24               KM_number Count_Related_Interactions     6.8929     0.0086592
+25                  KM_number Count_Related_Incidents    6.35211     0.0117304
+26                    KM_number Count_Related_Changes    177.014   2.99485e-40
+27                      KM_number Open_Time_HourOfDay    10.8814   0.000972706
+28                      KM_number Open_Time_DayOfWeek   0.872742      0.350207
+29                       KM_number CI_TypeSubType_aff    0.90923      0.340328
+30  Count_Related_Interactions Count_Related_Incid...     126.45   2.88839e-29
+31   Count_Related_Interactions Count_Related_Changes    7.81955     0.0051724
+32     Count_Related_Interactions Open_Time_HourOfDay   0.562839      0.453126
+33     Count_Related_Interactions Open_Time_DayOfWeek  0.0910199      0.762887
+34      Count_Related_Interactions CI_TypeSubType_aff   0.661448      0.416057
+35      Count_Related_Incidents Count_Related_Changes     2.6112      0.106124
+36        Count_Related_Incidents Open_Time_HourOfDay    1.81638      0.177757
+37        Count_Related_Incidents Open_Time_DayOfWeek   0.473323      0.491469
+38         Count_Related_Incidents CI_TypeSubType_aff    7.34584    0.00672647
+39          Count_Related_Changes Open_Time_HourOfDay    8.62504    0.00331879
+40          Count_Related_Changes Open_Time_DayOfWeek    10.6134     0.0011242
+41           Count_Related_Changes CI_TypeSubType_aff    16.8177   4.12807e-05
+42            Open_Time_HourOfDay Open_Time_DayOfWeek   0.544717      0.460491
+43             Open_Time_HourOfDay CI_TypeSubType_aff   0.310648      0.577288
+44             Open_Time_DayOfWeek CI_TypeSubType_aff    3.50479     0.0612036"

@@ -1,4 +1,4 @@
-,1 SelectKBest,2 SelectFPR,3 Interaction Terms SelectKBest,4 Interaction Terms SelectFPR
+,Optimize 1,Optimize 2,Optimize 3,Optimize 4
 Null Accuracy,0.7048187068067784,0.7048187068067784,,
 Metrics - Classification Report,"              precision    recall  f1-score   support
 
@@ -64,7 +64,7 @@ Column Transforms,,"['woeencoder', 'standardscaler']","[('woeencoder', WOEEncode
       dtype='object')), ('standardscaler', StandardScaler(copy=True, with_mean=True, with_std=True), Index(['Count_Related_Interactions', 'Count_Related_Incidents',
        'Count_Related_Changes'],
       dtype='object'))]"
-Selector,,"SelectFpr(alpha=0.05, score_func=<function f_classif at 0x1a214aae60>)","SelectKBest(k=45, score_func=<function f_classif at 0x1a214aae60>)","SelectFpr(alpha=0.05, score_func=<function f_classif at 0x1a214aae60>)"
+Selector,,"SelectFpr(alpha=0.05, score_func=<function f_classif at 0x1a16b175f0>)","SelectKBest(k=45, score_func=<function f_classif at 0x1a16b175f0>)","SelectFpr(alpha=0.05, score_func=<function f_classif at 0x1a16b175f0>)"
 Classifier,,"LogisticRegression(C=1.0, class_weight=None, dual=False, fit_intercept=True,
                    intercept_scaling=1, l1_ratio=None, max_iter=100,
                    multi_class='auto', n_jobs=None, penalty='l2',
@@ -92,26 +92,15 @@ Open_Time_DayOfWeek        -0.035750",,"[ 0.15531191  0.2640625   1.12477936  1.
   0.09571744  0.02808663 -0.09640587 -0.53453846 -0.18849206 -0.01286896
   0.11783178  1.69698495 -0.32302769 -0.13315008 -0.00987757  0.04285507
   0.03881677]"
-Name,,,Optimize Round 3: Adding Interaction Terms,Optimize Round 4: Adding Interaction Terms with SelectFpr
-Best Estimator Classification Intercept,,,[-0.90415783],
-Best Estimator Classification Coefficients,,,"[[ 1.59293354e-01  2.91368383e-01  1.11916076e+00  1.35144148e+00
-   1.32715945e+00  5.55074960e-02  6.52223487e-01  4.12747947e-02
-  -2.23711213e-02 -7.06769881e-02 -8.62674909e-02  5.39840844e-01
-  -1.45471602e-02  1.39538363e-01  1.26602364e-01  1.19745197e-01
-  -4.21114140e-02 -5.79452623e-02 -1.42263843e-01 -1.99340922e-01
-  -4.80149840e-01  6.53363482e-01 -4.52856027e-02 -4.90327229e-04
-  -5.64893436e-01 -2.03455219e-01 -7.12555558e-02 -4.06959906e-03
-  -7.27932745e-02  5.94271895e-02  1.63117229e+00 -2.67207424e-01
-   1.67434428e+00 -4.41346203e-02  1.62837382e-03  8.02638862e-02
-   7.85155008e-01 -1.36917851e-01 -1.42411097e-01  8.68015178e-02
-   1.48028904e-01  8.06941782e-02 -2.01599716e-02 -4.43875605e-02
-   1.83345568e-02]]",
-Best SearchGridCV score,,,0.7446540880503145,
-Best SearchGridCV parameters,,,{'selector__k': 45},
-PolynomialFeatures,,,"PolynomialFeatures(degree=2, include_bias=True, interaction_only=True,
-                   order='C')","PolynomialFeatures(degree=2, include_bias=True, interaction_only=True,
-                   order='C')"
-Selector - Scores,,,"                                        feature names     scores       p-value
+Selector - Scores,,"                feature names    scores       p-value
+0   Service_Component_WBS_aff   141.584   1.47283e-32
+1                     Urgency   6104.44             0
+2                   KM_number   177.756   2.06821e-40
+3  Count_Related_Interactions   679.763  7.61382e-148
+4     Count_Related_Incidents   902.109  1.10036e-194
+5       Count_Related_Changes   62.0758    3.4407e-15
+6         Open_Time_HourOfDay   5.60722     0.0178943
+7         Open_Time_DayOfWeek  0.351935      0.553025","                                        feature names     scores       p-value
 0                           Service_Component_WBS_aff    2626.06             0
 1                                             Urgency    141.584   1.47283e-32
 2                                           KM_number    6104.44             0
@@ -202,3 +191,22 @@ Selector - Scores,,,"                                        feature names     s
 42            Open_Time_HourOfDay Open_Time_DayOfWeek   0.544717      0.460491
 43             Open_Time_HourOfDay CI_TypeSubType_aff   0.310648      0.577288
 44             Open_Time_DayOfWeek CI_TypeSubType_aff    3.50479     0.0612036"
+Name,,,Optimize Round 3: Adding Interaction Terms,Optimize Round 4: Adding Interaction Terms with SelectFpr
+Best Estimator Classification Intercept,,,[-0.90415783],
+Best Estimator Classification Coefficients,,,"[[ 1.59293354e-01  2.91368383e-01  1.11916076e+00  1.35144148e+00
+   1.32715945e+00  5.55074960e-02  6.52223487e-01  4.12747947e-02
+  -2.23711213e-02 -7.06769881e-02 -8.62674909e-02  5.39840844e-01
+  -1.45471602e-02  1.39538363e-01  1.26602364e-01  1.19745197e-01
+  -4.21114140e-02 -5.79452623e-02 -1.42263843e-01 -1.99340922e-01
+  -4.80149840e-01  6.53363482e-01 -4.52856027e-02 -4.90327229e-04
+  -5.64893436e-01 -2.03455219e-01 -7.12555558e-02 -4.06959906e-03
+  -7.27932745e-02  5.94271895e-02  1.63117229e+00 -2.67207424e-01
+   1.67434428e+00 -4.41346203e-02  1.62837382e-03  8.02638862e-02
+   7.85155008e-01 -1.36917851e-01 -1.42411097e-01  8.68015178e-02
+   1.48028904e-01  8.06941782e-02 -2.01599716e-02 -4.43875605e-02
+   1.83345568e-02]]",
+Best SearchGridCV score,,,0.7446540880503145,
+Best SearchGridCV parameters,,,{'selector__k': 45},
+PolynomialFeatures,,,"PolynomialFeatures(degree=2, include_bias=True, interaction_only=True,
+                   order='C')","PolynomialFeatures(degree=2, include_bias=True, interaction_only=True,
+                   order='C')"

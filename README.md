@@ -1,6 +1,8 @@
-# Logistic Regression of Incident Data to Identify Predictors of SLA Breaches
+# Predicting Incident Management Service Level Agreement (SLA) Failures
+A Logistic Regression Application
 
-This repository contains the notebooks, data, and reports prepared for the completion of my capstone project in pursuit of a Master of Science degree in Data Analytics from Western Governors University. 
+
+This repository contains the notebooks, data, and reports prepared for the completion of my Master of Science in Data Analytics (MSDA) capstone project at Western Governors University. 
 
 # Abstract
 
@@ -9,4 +11,13 @@ Information Technology (IT) Service Management practices optimize the efficiency
 This study explores indicators of incident SLA breaches with respect to data available during the early stages of an IT incident’s lifecycle. The study built a Logistic Regression model using Python and a number of tools from the SciKit-Learn library. Some supplementary analysis leveraged the R language. 
 
 The Task 2 Data Analytics Report describes the data collection, the data extraction and preparation, and the analysis steps performed throughout the study followed by a summary of findings, implications, and recommendations. 
+
+# Data Source
+
+A study investigating factors contributing to incident management SLA risk requires an extract from an ITSM system used by an IT organization for tracking incidents over a specific period. This study leveraged an existing, publicly-available data set used in the *2014 Business Processing Intelligence Challenge (BPIC)* (see https://www.win.tue.nl/bpi/doku.php?id=2014:challenge). While the challenge released four data sets, this project focused only on the Incident Records file.  The terms for use of the data set specify that “The user is allowed to remix, transform or build upon the data, but only for noncommercial purposes”.
+
+# Acknowledgements
+
+Throughout the notebooks, links point to some of the resources used throughout development of the regression model. In particular, I found the information provided by Kevin Markham at [https://www.dataschool.io] extremely valuable.
+ 
 

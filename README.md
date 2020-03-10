@@ -1,5 +1,4 @@
-# Incident-Management-Process-BPIC2014
-Logistic Regression of Incident Data to Identify Predictors of SLA Breaches
+# Logistic Regression of Incident Data to Identify Predictors of SLA Breaches
 
 This repository contains the notebooks, data, and reports prepared for the completion of my capstone project in pursuit of a Master of Science degree in Data Analytics from Western Governors University. 
 

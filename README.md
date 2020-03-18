@@ -10,7 +10,9 @@ Information Technology (IT) Service Management practices optimize the efficiency
 
 This study explores indicators of incident SLA breaches with respect to data available during the early stages of an IT incident’s lifecycle. The study built a Logistic Regression model using Python and a number of tools from the SciKit-Learn library. Some supplementary analysis leveraged the R language. 
 
-The Task 2 Data Analytics Report describes the data collection, the data extraction and preparation, and the analysis steps performed throughout the study followed by a summary of findings, implications, and recommendations. 
+* [Task 2 Data Analytics Report](https://github.com/cmhstudies/Incident-Management-Process-BPIC2014/blob/master/Task%202%20Data%20Analytics%20Report%20CMHennings.pdf) describes the data collection, the data extraction and preparation, and the analysis steps performed throughout the study followed by a summary of findings, implications, and recommendations
+* [Task 3 Executive Summary](https://github.com/cmhstudies/Incident-Management-Process-BPIC2014/blob/master/Task%203%20Executive%20Summary.pdf) provides an overview of the study, results, and recommendations
+* [Task 3 Presentation](https://github.com/cmhstudies/Incident-Management-Process-BPIC2014/blob/master/Task%203%20Presentation.pdf) serves as a summary of the study for discussion purposes
 
 # Data Source
 
